@@ -7,7 +7,7 @@ uMentorship
 Membres/Members:
 
 * Raymond Claude Kouske Etegle, 300561603
-* Jordan Wildes SUFFO SOKAMTE, 300568070a
+* Jordan Wildes SUFFO SOKAMTE, 300568070
 * Alpha yagouba bah,300568208
 * Yann Ngoga, 300395068
 * Destin Wensley Mardony, 300507187
