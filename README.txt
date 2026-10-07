@@ -24,7 +24,7 @@ uMentorship
 
 Description du produit:
 
-uMentorship est une application web qui permet au utilisateur ayant besoins de soutien academique dans la preparation des examens de trouver des tuteurs dans leur environement
+uMentorship est une application web qui permet au utilisateur ayant besoins de soutien academique dans la preparation des examens de trouver des tuteurs dans leur environement.
 
 
 ---------------------------------------------
