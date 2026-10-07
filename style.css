@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.top-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+}
