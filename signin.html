@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign in - uMentorship</title>
+    <title>Sign in - uMentorship</title>
 
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="top-bar">
-        <a class="top-button" id="homepageButton" href="uMentorship/">Home</a>
+        <a class="top-button" id="homepageButton" href="index.html">Home</a>
     </div>
     <h1>Sign In</h1>
-     <form id="signin-form" class="auth-form">
-      <label for="fullname">Full name</label>
-      <input type="text" id="fullname" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" required>
-
-      <label for="password">Password</label>
-      <input type="password" id="password" minlength="6" required>
-
-      <button type="submit">Create account</button>
-      <p id="message"></p>
+    <form>
+        <input type="radio" id="student" name="role" value="Student">
+        <label for="student">Student</label>
+        <input type="radio" id="mentor" name="role" value="Mentor">
+        <label for="mentor">Mentor</label>
+        <label>Username</label>
+        <input type="text" id="user">
+        <label>Password</label>
+        <input type="password" id="password">
+        <input type="submit" value="Sign In">
     </form>
+    <p>No account?</p>
+    <a href="/signup.html">Sign up</a>
 
     <script src="script.js"></script>
 </body>
