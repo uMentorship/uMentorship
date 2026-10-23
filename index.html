@@ -3,15 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uMentorship</title>
+    <title>uMentorship - Home Page</title>
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div class="top-bar">
-        <a class="top-button" id="signinButton" href="signin">Sign In</a>
-    </div>
-    <h1>Welcome to uMentorship</h1>
+    <header class="navbar">
+        <a class="logo" href="index.html">uMentorship</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Get matched with a mentor who knows your courses</h1>
+            <p>
+                Tell us what you're studying and when your exams are.
+                We'll suggest mentors near you who did well in the same classes.
+            </p>
+            <div class="hero-buttons">
+                <a class="btn btn-primary" href="signup.html">Find a mentor</a>
+                <a class="btn" href="pricing.html">See pricing</a>
+            </div>
+        </section>
+
+        <section class="slider">
+            <button class="slider-btn" id="prevBtn">&lsaquo;</button>
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="" alt="">
+                    <p class="caption">Weekly study sessions in the run-up to midterms</p>
+                </div>
+
+                <div class="slide">
+                    <img src="" alt="">
+                    <p class="caption">Online meetings for the weeks you can't make it to campus</p>
+                </div>
+
+                <div class="slide">
+                    <img src="" alt="">
+                    <p class="caption">Group review sessions during exam season</p>
+                </div>
+            </div>
+
+            <button class="slider-btn" id="nextBtn">&rsaquo;</button>
+        </section>
+
+        <section class="about">
+            <h2>About uMentorship</h2>
+            <p>
+                uMentorship connects students who need help preparing for exams
+                with mentors in their area. Our mentors are students and graduates
+                who have already passed the courses you're taking, so they know
+                what the exams look like and where people tend to get stuck.
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">3,300+</span>
+                    <span class="stat-label">students helped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">mentors</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">events</span>
+                </div>
+            </div>
+
+            <a href="about.html">Read more about us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 uMentorship. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
