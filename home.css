@@ -80,9 +80,18 @@ section {
     text-decoration: none;
 }
 
+.btn:hover {
+    background-color: #e6f0fa;
+}
+
 .btn-primary {
     color: white;
     background-color: #0066cc;
+}
+
+.btn-primary:hover {
+    background-color: #004c99;
+    border-color: #004c99;
 }
 
 .slider {
@@ -101,6 +110,10 @@ section {
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.slider-btn:hover {
+    background-color: #eee;
 }
 
 .slides {
