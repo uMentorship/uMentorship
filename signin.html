@@ -5,29 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in - uMentorship</title>
 
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="signin.css"/>
 </head>
 <body>
-    <div class="top-bar">
-        <a class="top-button" id="homepageButton" href="./">Home</a>
-    </div>
-    <h1>Sign In</h1>
-    <form>
-        <div class="role">
-            <input type="radio" id="student" name="role" value="Student">
-            <label for="student">Student</label>
-            <input type="radio" id="mentor" name="role" value="Mentor">
-            <label for="mentor">Mentor</label>
-        </div>
-        <label>Username</label>
-        <input type="text" id="user">
-        <label>Password</label>
-        <input type="password" id="password">
-        <input type="submit" value="Sign In">
-    </form>
-    <p>No account?</p>
-    <a href="./signup.html">Sign up</a>
+    <header class="navbar">
+        <a class="logo" href="index.html">uMentorship</a>
 
-    <script src="script.js"></script>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a class="active" href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sign In</h1>
+        <form>
+            <div class="role">
+                <input type="radio" id="student" name="role" value="Student">
+                <label for="student">Student</label>
+                <input type="radio" id="mentor" name="role" value="Mentor">
+                <label for="mentor">Mentor</label>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="user">
+                <label>Password</label>
+                <input type="password" id="password">
+                <input type="submit" value="Sign In">
+            </div>
+        </form>
+        <div>
+            <p>No account?</p>
+            <a href="./signup.html">Sign up</a>
+        </div>
+
+        <script src="signin.js"></script>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Contact us: <a href="mailto:contact@umentorship.ca">contact@umentorship.ca</a></p>
+        <p>&copy; 2026 uMentorship. All rights reserved.</p>
+    </footer>
 </body>
 </html>
