@@ -129,6 +129,14 @@ section {
     color: #666;
 }
 
+.steps {
+    padding-left: 20px;
+}
+
+.steps li {
+    margin-bottom: 12px;
+}
+
 .stats {
     display: flex;
     flex-wrap: wrap;
@@ -153,11 +161,36 @@ section {
     color: #0066cc;
 }
 
+.more-link {
+    font-weight: 600;
+    color: #444;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
 footer {
     padding: 24px;
     text-align: center;
     color: #666;
     border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+.social-links a {
+    margin: 0 8px;
+    font-size: 22px;
+    color: #444;
+}
+
+.social-links a:hover {
+    color: #0066cc;
 }
 
 @media (max-width: 600px) {
