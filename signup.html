@@ -14,25 +14,29 @@
     </div>
 
     <main class="auth">
-        <form id="signin-form" class="auth-card">
-            <h1>Sign Up</h1>
+          <form id="signup-form" class="auth-card">
+        <h1>Sign Up</h1>
 
-            <label for="fullname">Full name</label>
-            <input type="text" id="fullname" name="name" autocomplete="name" required>
+        <div class="role">
+            <input type="radio" id="student" name="role" value="Student" checked>
+            <label for="student">Student</label>
+            <input type="radio" id="mentor" name="role" value="Mentor">
+            <label for="mentor">Mentor</label>
+        </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user" autocomplete="username" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" autocomplete="new-password" minlength="6" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" minlength="6" required>
 
-            <button type="submit">Create account</button>
-            <p id="message"></p>
+        <button type="submit">Create account</button>
+        <p id="message"></p>
 
-            <p class="auth-link">Already have an account? <a href="signin.html">Sign In</a></p>
-        </form>
+        <p class="auth-link">Already have an account? <a href="signin.html">Sign In</a></p>
+    </form>
     </main>
 
-    <script src="script.js"></script>
+    <script src="signup.js"></script>
 </body>
 </html>
