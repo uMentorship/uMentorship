@@ -1,0 +1,29 @@
+style_guidelines.txt
+
+Couleur
+        Background color : Grey (#f5f5f5) and white
+        Text color : Black (#222), blue (#0066cc) and white
+        Primary blue : #0066cc (icon.svg, links, main buttons)
+        Dark blue (hover) : #004c99
+        Borders : #ddd
+
+Mise en page
+        Forms in a centered white card, max width 400px
+        Rounded corners (8px), light shadow around the card
+        Light grey page background
+        Top bar with a Home button
+
+Icons :
+        icon.svg : blue square (#0066cc) with a white "u"
+
+Typographie :
+        "Segoe UI", Arial, sans-serif (sans-serif)
+        Title centered, 1.8rem on sign up / sign in
+
+links : black and blue underline
+        Links in blue #0066cc, underlined
+
+Buttons style : rectangulaire avec forme arrondie (6px)
+        Filled button : blue background (#0066cc), white text, dark blue (#004c99) on hover
+        Outline button : blue border, white background, light blue (#e6f0fa) on hover
+        Round slider buttons (40px), white with grey border
