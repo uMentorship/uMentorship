@@ -5,15 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/team.css">
-    <script src="Scripts/team.js" defer></script>
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
     <title>Notre équipe | uMentorship</title>
 </head>
 <body>
 
-    <header>
-        <h1>TEAM</h1>
-        <p>Ensemble, nous apprenons et progressons.</p>
+    <header class="navbar">
+        <a class="logo" href="index.html">uMentorship</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a class="active" href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="team_header">
+    </div>
 
     <main>
         <section>
@@ -28,63 +43,75 @@
         <section>
             <h2>Les membres du projet</h2>
 
-            <article>
-                <img src="images/teams/jordan.jpg"
+            <article data-linkedin="https://Jordan-Suffo" data-github="https://github.com/susowijo" data-instagram="https://instagram.com/susowijo">
+                <img src="images/1.png"
                      alt="Photo de Jordan"
                      width="120">
-                <h3>Jordan SUFFO</h3>
-                <p>Architecte solution</p>
-                <p>Design les patterns de conception et assure le respect des normes applicatives.</p>
+                <div>
+                    <h3>Jordan SUFFO</h3>
+                    <p>Architecte solution</p>
+                    <p>Design les patterns de conception et assure le respect des normes applicatives.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
-            <article>
-                <img src="images/teams/parsa.jpg"
+            <article data-linkedin="https://linkedin.com" data-github="https://github.com" data-instagram="https://instagram.com">
+                <img src="images/1.png"
                      alt="Photo de Parsa"
                      width="120">
-                <h3>Parsa Rasouli</h3>
-                <p>Développeus Javascipt</p>
-                <p>Participe au développement de la plateforme et assure le dynamisme evolutif.</p>
+                <div>
+                    <h3>Parsa Rasouli</h3>
+                    <p>Développeus Javascipt</p>
+                    <p>Participe au développement de la plateforme et assure le dynamisme evolutif.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
-            <article>
-                <img src="images/teams/yann.jpg"
+            <article data-linkedin="https://linkedin.com" data-github="https://github.com" data-instagram="https://instagram.com">
+                <img src="images/1.png"
                      alt="Photo de Yann"
                      width="120">
-                <h3>Yann Ngoga</h3>
-                <p>Concepteur</p>
-                <p>Contribue à la réflexion sur les besoins des étudiants.</p>
+                <div>
+                    <h3>Yann Ngoga</h3>
+                    <p>Concepteur</p>
+                    <p>Contribue à la réflexion sur les besoins des étudiants.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
-            <article>
-                <img src="images/teams/raymond.jpg"
+            <article data-linkedin="https://linkedin.com" data-github="https://github.com" data-instagram="https://instagram.com">
+                <img src="images/1.png"
                      alt="Photo de Raymon"
                      width="120">
-                <h3>Raymond Claude</h3>
-                <p>Responsable ergonomie et communication</p>
-                <p>Veille à la clarté du visuel et des échanges. Assure la présentation du projet.</p>
+                <div>
+                    <h3>Raymond Claude</h3>
+                    <p>Responsable ergonomie et communication</p>
+                    <p>Veille à la clarté du visuel et des échanges. Assure la présentation du projet.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
-            <article>
-                <img src="images/teams/.jpg"
+            <article data-linkedin="https://linkedin.com" data-github="https://github.com" data-instagram="https://instagram.com">
+                <img src="images/1.png"
                      alt="Photo de Alpha"
                      width="120">
-                <h3>Alpha Yagouba</h3>
-                <p>Développeur</p>
-                <p>Contribue aux fonctionnalités et à la qualité de la plateforme.</p>
+                <div>
+                    <h3>Alpha Yagouba</h3>
+                    <p>Développeur</p>
+                    <p>Contribue aux fonctionnalités et à la qualité de la plateforme.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
-            <article>
-                <img src="images/teams/.jpg"
+            <article data-linkedin="https://linkedin.com" data-github="https://github.com" data-instagram="https://instagram.com">
+                <img src="images/1.png"
                      alt="Photo de Wensley"
                      width="120">
-                <h3>Destin Wensley</h3>
-                <p>Développeur</p>
-                <p>Contribue aux fonctionnalités et à la qualité de la plateforme.</p>
+                <div>
+                    <h3>Destin Wensley</h3>
+                    <p>Développeur</p>
+                    <p>Contribue aux fonctionnalités et à la qualité de la plateforme.</p>
+                </div>
                 <button type="button">Voir le profil</button>
             </article>
 
@@ -92,8 +119,33 @@
     </main>
 
     <footer>
-        <p>uMentorship - Grandir ensemble grâce à l'entraide.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Contact us: <a href="mailto:contact@umentorship.ca">contact@umentorship.ca</a></p>
+        <p>&copy; 2026 uMentorship. All rights reserved.</p>
     </footer>
 
+    <dialog id="profile-dialog">
+        <div class="dialog-content">
+            <h2 id="profile-name">Nom du membre</h2>
+            <p id="profile-role" class="role">Rôle</p>
+            <p id="profile-description">Description complète...</p>
+            
+            <div class="dialog-social-links">
+                <a id="profile-linkedin" href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a id="profile-github" href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a id="profile-instagram" href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <button type="button" id="close-dialog">Fermer</button>
+        </div>
+    </dialog>
+
+
+    <script src="Scripts/team.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
