@@ -10,13 +10,33 @@ a {
   color: #0066cc;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
 main {
   box-sizing: border-box;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 140px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: 16px;
 }
 
 .auth-card {
@@ -170,6 +190,7 @@ form input[type="submit"]:active {
 }
 
 footer {
+  margin: auto;
   padding: 10px;
   text-align: center;
   color: #999;
