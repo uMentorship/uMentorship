@@ -1,98 +1,189 @@
-<!doctype html>
+<!Doctype html>
+<html>
 
-<html lang="fr">
-  <head>
-    <title>Pricing | uMentorship</title>
-    <section class="navbar">
-      <a class="logo" href="index.html">uMentorship</a>
+    <head>
+        <title>Pricing | uMentorship</title>
+        <section class="navbar">
+            <a class="logo" href="index.html">uMentorship</a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="students.html">Students</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="pricing.html">Pricing</a></li>
-          <li><a href="signin.html">Sign in</a></li>
-          <li><a href="signup.html">Sign up</a></li>
-        </ul>
-      </nav>
-    </section>
-    <div class="image_1">
-      <img
-        src=".\Images\image_1.jpg"
-        alt="Tuteur de groupe"
-        class="price_image_1"
-      />
-      <br />
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="signin.html">Sign in</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="image_1">
+            
+            <img src=".\Images\image_1.jpg" alt="Tuteur de groupe" class="price_image_1"> <br>
 
-      <div class="top-image-1"></div>
+            <div class="top-image-1"> </div>
 
-      <div class="bottom-image-1"></div>
-
-      <div class="cat-plan">
-        <h1>Catalogue des plans</h1>
-      </div>
-    </div>
-  </head>
-  <link rel="stylesheet" href="pricing.css" />
-
-  <body>
-    <div class="partie_a">
-      Choose the category that best fits your needs. <br />
-      Join our community and boost your academic performance. <br />
-    </div>
-
-    <section class="pricingcat">
-      <div class="pricing-box">
-        <div>
-          <h2>Pay Per Use</h2>
+            <div class="bottom-image-1"> </div>
+            
         </div>
-        <div class="plan-description">$0/Month</div>
-        <div>
-          <button class="plan_btn">Choose this plan</button>
-        </div>
-        <div class="plan-description">Pay only when you use</div>
-        <div class="plan-description">No subscription required</div>
-      </div>
-      <div class="pricing-box">
-        <div>
-          <h2>Monthly Subscription</h2>
-        </div>
-        <div class="plan-description">12$/Month</div>
-        <div>
-          <button class="plan_btn">Choose this plan</button>
-        </div>
-        <div class="plan-description">Billed every month</div>
-        <div class="plan-description">Access to our library</div>
-        <div class="plan-description">Unlimited downloads</div>
-      </div>
-      <div class="pricing-box">
-        <div>
-          <h2>Semester Subscription</h2>
-        </div>
-        <div class="plan-description">40$/Session</div>
-        <div>
-          <button class="plan_btn">Choose this plan</button>
-        </div>
-        <div class="plan-description">Access for one Academic Semester</div>
-        <div class="plan-description">Acces to our library</div>
-        <div class="plan-description">Unlimited downloads</div>
-      </div>
-    </section>
-    <p>Still have questions? Check out our FAQ</p>
-  </body>
-  <footer>
-    <div class="social-links">
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <p>
-      Contact us:
-      <a href="mailto:contact@umentorship.ca">contact@umentorship.ca</a>
-    </p>
-    <p>&copy; 2026 uMentorship. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="pricing.css"/>
+    <body>
+        <main>
+            <section class="cat_plan">
+                <h1>
+                    Catalogue des plans
+                </h1>
+                <p>
+                    Choisissez le forfait qui correspond le mieux à vos besoins, rejoignez
+                    notre communauté et boostez vos performances académiques.
+                </p>
+            </section>
+        </main>
+       
+       
+        <!-- Plan d'abonnement-->
+        <section class="grille_plan">
+            <!--1er Plan d'utilisation-->
+            <article class="box_plan">
+                <div>
+                    <div class="entete_plan">
+                        <div class="badges">
+                            <span class="premier_badge">
+                                Sans engagement
+                            </span>
+                            <span class="deuxieme_badge">
+                                Ideal pour tester
+                            </span>
+                        </div>
+                        <h2 class="nom_plan">
+                            Pay Per Use
+                        </h2>
+                        <div class="prix_plan">
+                            0 $ <span> / Mois </span>
+                        </div>
+                        <p class="description_plan">
+                            Payez uniquement quand vous l'utilisez.<br>
+                             Aucun abonnement requis.
+                        </p> 
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <span class="check">✓ </span> 
+                                Accès aux mentors
+                        </li>
+                        <li>
+                            <span class="check">✓</span> 
+                            Aucun engagement
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                             Paiement sécurisé
+                        </li>
+                    </ul>
+                </div>
+                <a href="#plan-carte" class="btn"> <!-- A revoir -->
+                        Choisir ce forfait
+                </a>
+            </article>
+
+
+            <!-- 2e Plan d'utilisation : Abonnement Mensuel -->
+            <article class="box_plan">
+                <div>
+                    <div class="entete_plan">
+                        <div class="badges">
+                            <span class="premier_badge">
+                                Fexible
+                            </span>
+                            <span class="deuxieme_badge">
+                                Annuler a tout moment
+                            </span>
+                        </div>
+                        <h2 class="nom_plan">
+                            Abonnement Mensuel
+                        </h2>
+                        <div class="prix_plan">
+                            12 $ 
+                            <span>/ Mois</span>
+                        </div>
+                        <p class="description_plan">
+                            Facturé chaque mois. Accès à notre bibliothèque.<br>
+                            Téléchargements illimités.
+                        </p>
+                    </div>
+                    <ul class="list">
+                        <li> <span class="check">✓</span> 
+                            Accès aux mentors
+                        </li>
+                        <li> <span class="check">✓</span> 
+                            Aucun engagement
+                        </li>
+                        <li> <span class="check">✓</span> 
+                            Paiement sécurisé
+                        </li>
+                    </ul> 
+                </div>
+                <a href="#plan-mensuel" class="btn">
+                        Choisir ce forfait
+                </a>
+            </article>
+
+            <!-- 3e Plan d'utilisation : Abonnement Semestriel (Recomande) -->
+            <article class="box_plan_rec">
+                <div>
+                    <div class="entete_plan">
+                        <div class="badges">
+                            <span class="premier_badge">
+                                Plus populaire
+                            </span>
+                            <span class="deuxieme_badge">
+                                Économisez 17%
+                            </span>
+                        </div>
+                        <h2 class="nom_plan">
+                            Abonnement Semestriel
+                        </h2>
+                        <p class="sousnom_plan">
+                            (Recommandé)
+                        </p>
+                        <div class="prix_plan">
+                            40 $ <span>/ Session</span>
+                        </div>
+                        <p class="description_plan">
+                            Accès pour un semestre académique. <br>
+                            Bibliothèque incluse. Téléchargements illimités.
+                        </p>
+                    </div>
+                    <ul class="list">
+                        <li> <span class="check">✓</span> 
+                            Accès aux mentors
+                        </li>
+                        <li> <span class="check">✓</span> 
+                            Aucun engagement
+                        </li>
+                        <li> <span class="check">✓</span> 
+                            Paiement sécurisé
+                        </li>
+                    </ul> 
+                </div>
+                <a href="#plan-semestriel" class="btn">
+                        Choisir ce forfait
+                </a>
+            </article>
+        </section>
+        
+        <!--Pied de page-->
+        <footer class="bot_info">
+            <p class="faq_text">
+                Encore des questions ? <a href="#faq">Consultez notre FAQ</a>
+            </p>
+            <p class="footer_meta">
+            Contact : <a href="mailto:contact@umentorship.ca">contact@umentorship.ca</a> | © 2026 uMentorship. Tous droits réservés.
+            </p>
+        </footer>
+
+    </body>
 </html>
