@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   color: #222;
-  background-color: #f5f5f5;
+  background-color: #f4f7fb;
   line-height: 1.6;
 }
 
@@ -13,21 +13,24 @@ a {
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 100;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 16px 24px;
+  padding: 16px 32px;
   background-color: white;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5eaf0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bold;
-  color: #222;
+  color: #0066cc;
   text-decoration: none;
+  letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -42,26 +45,36 @@ a {
 .nav-links a {
   color: #444;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
   color: #0066cc;
-  text-decoration: underline;
+}
+
+.nav-links a.active {
+  font-weight: 700;
 }
 
 main {
-  padding: 40px 24px;
+  padding: 55px 24px;
   text-align: center;
 }
 
 h1 {
   margin-bottom: 5px;
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+  color: #1b2a41;
 }
 
 .subtitle {
-  color: #666;
-  margin-bottom: 32px;
+  color: #687588;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
 }
 
 .card-container {
@@ -69,100 +82,182 @@ h1 {
   grid-template-columns: repeat(3, 300px);
   justify-content: center;
   align-items: start;
-  gap: 24px;
+  gap: 28px;
 }
 
 .mentor-card {
   box-sizing: border-box;
   width: 300px;
-  padding: 24px;
+  padding: 26px;
   background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
+  border: 1px solid #e4eaf2;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(30, 60, 90, 0.05);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
+  position: relative;
 }
 
 .mentor-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(30, 60, 90, 0.12);
+  border-color: #c9def5;
+}
+
+.availability {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.available {
+  background-color: #e6f7ed;
+  color: #218838;
+}
+
+.busy {
+  background-color: #fff3e0;
+  color: #b76e00;
+}
+
+.unavailable {
+  background-color: #f1f1f1;
+  color: #666;
 }
 
 .profile-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
-  margin: auto;
+  width: 85px;
+  height: 85px;
+  margin: 10px auto 0;
   border-radius: 50%;
-  background-color: #eaf3ff;
+  background: linear-gradient(135deg, #eaf3ff, #d6e8ff);
   color: #0066cc;
-  font-size: 30px;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.08);
+  transition: transform 0.25s;
+}
+
+.mentor-card:hover .profile-icon {
+  transform: scale(1.05);
 }
 
 .mentor-card h2 {
-  margin: 12px 0 4px;
+  margin: 15px 0 4px;
   font-size: 1.3rem;
+  color: #1b2a41;
 }
 
 .subject {
   color: #0066cc;
   font-weight: 600;
   margin: 0;
+  font-size: 0.95rem;
 }
 
 .description {
-  color: #666;
+  color: #687588;
   font-size: 0.9rem;
-  margin: 12px 0 20px;
+  margin: 12px 0 22px;
+  min-height: 60px;
 }
 
 .mentor-card button {
   width: 100%;
-  padding: 10px;
+  padding: 11px;
   font-family: inherit;
   font-size: 15px;
+  font-weight: 600;
   background-color: #0066cc;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition:
+    background-color 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .mentor-card button:hover {
   background-color: #004c99;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+.mentor-card button:active {
+  transform: scale(0.98);
 }
 
 .extra-info {
   display: none;
   text-align: left;
-  margin-top: 16px;
-  padding-top: 12px;
-  border-top: 1px solid #ddd;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5eaf0;
   font-size: 0.9rem;
+  color: #555;
 }
 
 .extra-info p {
-  margin: 8px 0;
+  margin: 10px 0;
+}
+
+.extra-info strong {
+  color: #26374a;
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  color: #f5b301;
+}
+
+.rating-number {
+  color: #666;
+  font-size: 0.85rem;
 }
 
 footer {
-  padding: 24px;
+  padding: 30px 24px;
   text-align: center;
-  color: #666;
-  border-top: 1px solid #ddd;
+  color: #687588;
+  border-top: 1px solid #e5eaf0;
+  background-color: white;
 }
 
 footer p {
   margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .social-links a {
-  margin: 0 8px;
+  margin: 0 10px;
   font-size: 22px;
-  color: #444;
+  color: #455468;
+  transition:
+    color 0.2s,
+    transform 0.2s;
 }
 
 .social-links a:hover {
@@ -176,6 +271,14 @@ footer p {
 }
 
 @media (max-width: 600px) {
+  main {
+    padding: 35px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
   .card-container {
     grid-template-columns: 1fr;
   }
@@ -183,10 +286,16 @@ footer p {
   .mentor-card {
     width: 100%;
     max-width: 400px;
+    margin: auto;
   }
 
   .navbar {
     flex-wrap: wrap;
     gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    gap: 14px;
   }
 }
