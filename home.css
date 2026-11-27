@@ -54,36 +54,26 @@ section {
     border-color: #004c99;
 }
 
-.slider {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.slider-btn {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    color: #444;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider-btn:hover {
-    background-color: #eee;
+.slider-box {
+    position: relative;
 }
 
 .slides {
     display: flex;
-    gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    scrollbar-width: none;
+}
+
+/* hide the scrollbar in chrome and edge */
+.slides::-webkit-scrollbar {
+    display: none;
 }
 
 .slide {
+    position: relative;
     flex: 0 0 100%;
     scroll-snap-align: start;
 }
@@ -94,12 +84,75 @@ section {
     height: 400px;
     object-fit: cover;
     background-color: #ddd;
-    border-radius: 8px;
 }
 
+/* the caption sits on top of the bottom of the image */
 .caption {
-    margin: 8px 0 0;
-    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 50px 24px 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65));
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    padding: 0 0 4px;
+    font-size: 28px;
+    line-height: 1;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    background-color: white;
+    color: #0066cc;
+}
+
+.prev {
+    left: 14px;
+}
+
+.next {
+    right: 14px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.dot.active {
+    width: 26px;
+    border-radius: 5px;
+    background-color: #0066cc;
 }
 
 .steps {
@@ -151,6 +204,17 @@ section {
     }
 
     .slide img {
-        height: 220px;
+        height: 240px;
+    }
+
+    .caption {
+        font-size: 15px;
+        padding: 40px 16px 12px;
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
     }
 }
