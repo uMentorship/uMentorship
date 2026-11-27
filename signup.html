@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up - uMentorship</title>
 
-    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="signup.css"/>
+    <link rel="stylesheet" href="common.css" />
 </head>
 <body>
-    <div class="top-bar">
-        <a class="top-button" id="homepageButton" href="index.html">Home</a>
-    </div>
+    <header class="navbar">
+      <a class="logo" href="index.html">uMentorship</a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+          <li><a class="active" href="signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="auth">
           <form id="signup-form" class="auth-card">
@@ -38,5 +50,6 @@
     </main>
 
     <script src="signup.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
