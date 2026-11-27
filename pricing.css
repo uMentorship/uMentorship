@@ -56,6 +56,11 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 1.5rem;
     align-items: stretch;
+    /* same width as main so the cards don't touch the sides */
+    box-sizing: border-box;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .box_plan {
