@@ -1,9 +1,11 @@
 /* Image*/
 
 .price_image_1{
-    max-width : 100%;
-    height : auto;
-    width : 1550px;
+    display : block;
+    width : 100%;
+    height : 420px;
+    object-fit : cover; /* fills the space without stretching the image */
+    object-position : center 30%;
     background : linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(229, 18, 18, 0));
 }
 
@@ -192,4 +194,11 @@ main {
 /* space above the footer */
 footer {
     margin-top : 2.75rem;
+}
+
+/* smaller image on phones */
+@media (max-width: 600px) {
+    .price_image_1{
+        height : 220px;
+    }
 }
