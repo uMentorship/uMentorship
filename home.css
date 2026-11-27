@@ -145,27 +145,6 @@ section {
     text-decoration: underline;
 }
 
-footer {
-    padding: 24px;
-    text-align: center;
-    color: #666;
-    border-top: 1px solid #ddd;
-}
-
-footer p {
-    margin: 8px 0;
-}
-
-.social-links a {
-    margin: 0 8px;
-    font-size: 22px;
-    color: #444;
-}
-
-.social-links a:hover {
-    color: #0066cc;
-}
-
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 32px;

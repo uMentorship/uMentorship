@@ -73,3 +73,41 @@ body {
     gap: 14px;
   }
 }
+
+/* ----- Footer (same look as the Students page) ----- */
+
+footer {
+  padding: 30px 24px;
+  text-align: center;
+  color: #687588;
+  border-top: 1px solid #e5eaf0;
+  background-color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #455468;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: #0066cc;
+  text-decoration: none;
+}

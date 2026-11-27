@@ -130,8 +130,3 @@ dialog::backdrop {
     color: #49a1f3; /* Bleu plus clair au survol */
     transform: scale(1.15); /* Léger effet de zoom au survol */
 }
-
-footer {
-    padding: 20px;
-    text-align: center;
-}

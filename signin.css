@@ -172,26 +172,6 @@ form input[type="submit"]:active {
   text-decoration: underline;
 }
 
-footer {
-  padding: 10px;
-  text-align: center;
-  color: #999;
-  font-size: 0.75rem;
-}
-
-footer p {
-  margin: 3px 0;
-}
-
-footer a {
-  color: #888;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #0066cc;
-}
-
 @media (max-width: 600px) {
   .auth-card {
     padding: 24px;

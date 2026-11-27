@@ -189,39 +189,7 @@ main {
     margin-top : 0.2rem;
 }
 
-
-/* FAQ & Pied de page */
-.bot_info {
-    text-align : center;
+/* space above the footer */
+footer {
     margin-top : 2.75rem;
-}
-
-.faq-text {
-    font-size : 1rem;
-    font-weight : 600;
-    color : #1a202c;
-    margin-bottom : 0.5rem;
-}
-
-.faq_text a {
-    color : #134e9b;
-    text-decoration : none;
-}
-
-.faq_text a:hover {
-    text-decoration : underline;
-}
-
-.footer_meta {
-    font-size : 0.85rem;
-    color : #4a5568;
-}
-
-.footer_meta a {
-    color : #134e9b;
-    text-decoration: none;
-}
-
-.footer_meta a:hover {
-    text-decoration : underline;
 }
