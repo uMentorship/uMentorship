@@ -16,6 +16,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
+  message.style.color = "green";
   message.textContent = "Account created! Redirecting to sign in...";
   setTimeout(function () {
     window.location.href = "signin.html";
